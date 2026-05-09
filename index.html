@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaayu Designer — Social Media & Digital Strategy</title>
+  <meta name="description" content="Vaayu Designer — Premium creative digital agency specialising in social media management, branding, graphic design, motion graphics, web & app development." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Grain overlay -->
+  <div class="grain-overlay"></div>
+
+  <!-- Canvas for particles -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ──────────── NAVBAR ──────────── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Vaayu<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ──────────── HERO SECTION ──────────── -->
+  <section class="hero" id="hero">
+    <!-- Animated gradient orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-inner">
+      <!-- LEFT CONTENT -->
+      <div class="hero-left reveal-up">
+        <div class="badge">
+          <span class="badge-dot"></span>
+          Available for Freelancing / Remote Work
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm<br />
+          <span class="gradient-text">Vaayu Designer</span>
+        </h1>
+
+        <p class="hero-sub">Social Media Manager &amp; Digital Strategist</p>
+
+        <p class="hero-desc">
+          4+ years of turning scroll-stopping ideas into measurable growth.
+          I help brands build real communities, drive engagement, and convert
+          followers into customers — from anywhere in the world.
+        </p>
+
+        <!-- Stats -->
+        <div class="stats-row">
+          <div class="stat-card">
+            <span class="stat-num glow-num">4+</span>
+            <span class="stat-label">YEARS EXPERIENCE</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num glow-num">10+</span>
+            <span class="stat-label">CLIENTS MANAGED</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-num glow-num">5+</span>
+            <span class="stat-label">TEAM MEMBERS</span>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="btn-row">
+          <a href="#work" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-glass">Let's Connect →</a>
+        </div>
+
+        <p class="scroll-hint">↓ scroll to explore</p>
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="hero-right reveal-up delay-2">
+        <!-- Image wrapper -->
+        <div class="hero-img-wrapper">
+          <div class="img-glow-ring"></div>
+          <div class="hero-img-frame">
+            <!-- USER: replace the src below with your own image path -->
+            <img
+              src="profile.jpg"
+              alt="Vaayu Designer"
+              class="hero-img"
+              id="heroImg"
+              onerror="this.style.display='none'; document.getElementById('heroImgFallback').style.display='flex';"
+            />
+            <!-- Fallback placeholder shown if image not found -->
+            <div class="hero-img-placeholder" id="heroImgFallback">
+              <span>📸</span>
+              <p>Place your photo as<br /><code>profile.jpg</code> in this folder</p>
+            </div>
+          </div>
+          <!-- Floating skill pill cards -->
+          <div class="skill-pill pill-1 float-anim">📈 Content Strategy</div>
+          <div class="skill-pill pill-2 float-anim delay-1">🎨 Graphic Design</div>
+          <div class="skill-pill pill-3 float-anim delay-2">🚀 Brand Growth</div>
+          <div class="skill-pill pill-4 float-anim delay-3">📱 Social Media</div>
+          <div class="skill-pill pill-5 float-anim delay-4">✨ Motion Graphics</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────── ABOUT TEAM SECTION ──────────── -->
+  <section class="about" id="about">
+    <div class="orb orb-about-1"></div>
+    <div class="orb orb-about-2"></div>
+
+    <div class="section-inner">
+      <div class="section-badge reveal-up">ABOUT TEAM</div>
+
+      <h2 class="section-title reveal-up">
+        The creative team behind the <span class="gradient-text">strategy</span>
+      </h2>
+
+      <!-- 3-column grid -->
+      <div class="about-grid">
+        <!-- Left card -->
+        <div class="glass-card about-side-card reveal-up delay-1">
+          <div class="card-icon">🎯</div>
+          <h3 class="card-title">Strategic Creativity</h3>
+          <p class="card-desc">
+            We don't just create content — we build powerful digital strategies
+            designed to connect brands with the right audience through
+            creativity, storytelling, and modern design experiences.
+          </p>
+        </div>
+
+        <!-- Centre main card -->
+        <div class="glass-card about-main-card reveal-up delay-2">
+          <p class="about-body">
+            With <strong>4+ years</strong> of hands-on experience in social
+            media management, branding, and digital content creation, our team
+            specialises in building impactful online experiences that help
+            brands grow faster in the modern digital world.
+          </p>
+          <p class="about-body">
+            From social media strategy and graphic design to motion graphics,
+            website development, and content creation — we combine creativity
+            with strategy to deliver visually powerful and performance-driven
+            results.
+          </p>
+          <p class="about-body">
+            We focus on creating scroll-stopping content, engaging brand
+            identities, and modern digital experiences that help businesses
+            stand out, build trust, and convert audiences into loyal customers.
+          </p>
+
+          <!-- Skill tags -->
+          <div class="tag-row">
+            <span class="tag">Social Media Management</span>
+            <span class="tag">Graphic Design</span>
+            <span class="tag">Motion Graphics</span>
+            <span class="tag">Website Development</span>
+            <span class="tag">Brand Strategy</span>
+            <span class="tag">Content Creation</span>
+            <span class="tag">UI/UX Design</span>
+            <span class="tag">Video Editing</span>
+          </div>
+        </div>
+
+        <!-- Right card -->
+        <div class="glass-card about-side-card reveal-up delay-3">
+          <div class="card-icon">🌍</div>
+          <h3 class="card-title">Remote &amp; Global</h3>
+          <p class="card-desc">
+            Our creative workflow is fully remote-ready, allowing us to
+            collaborate with brands, creators, and businesses worldwide while
+            delivering high-quality digital solutions with smooth communication
+            and fast execution.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────── WORK / SERVICES SECTION ──────────── -->
+  <section class="work" id="work">
+    <div class="orb orb-work-1"></div>
+    <div class="section-inner">
+      <div class="section-badge reveal-up">WORK</div>
+      <h2 class="section-title reveal-up">
+        What we can build for your <span class="gradient-text">brand</span>
+      </h2>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal-up delay-1">
+          <div class="svc-icon">📱</div>
+          <h3 class="svc-title">Social Media Management</h3>
+          <p class="svc-desc">
+            Managing and growing your social media presence with strategic
+            content planning, audience engagement, content scheduling, and
+            performance-focused campaigns designed to increase reach and
+            visibility.
+          </p>
+          <div class="svc-glow-line"></div>
+        </div>
+
+        <div class="service-card reveal-up delay-2">
+          <div class="svc-icon">✍️</div>
+          <h3 class="svc-title">Script Writing</h3>
+          <p class="svc-desc">
+            Creating engaging and high-retention scripts for YouTube videos,
+            reels, advertisements, documentaries, and social media content that
+            capture audience attention and strengthen brand storytelling.
+          </p>
+          <div class="svc-glow-line"></div>
+        </div>
+
+        <div class="service-card reveal-up delay-3">
+          <div class="svc-icon">🎨</div>
+          <h3 class="svc-title">Graphic Design</h3>
+          <p class="svc-desc">
+            Designing premium visual content including social media creatives,
+            branding assets, ad graphics, promotional designs, and modern
+            digital visuals for a strong online identity.
+          </p>
+          <div class="svc-glow-line"></div>
+        </div>
+
+        <div class="service-card reveal-up delay-4">
+          <div class="svc-icon">🔥</div>
+          <h3 class="svc-title">Thumbnail Design</h3>
+          <p class="svc-desc">
+            Designing cinematic and high-converting thumbnails optimised for
+            clicks, engagement, viewer psychology, and modern YouTube-style
+            content presentation.
+          </p>
+          <div class="svc-glow-line"></div>
+        </div>
+
+        <div class="service-card reveal-up delay-1">
+          <div class="svc-icon">🎬</div>
+          <h3 class="svc-title">Video Editing</h3>
+          <p class="svc-desc">
+            Creating cinematic edited content with smooth storytelling, modern
+            transitions, premium effects, and engaging pacing for high-quality
+            visual experiences. Includes 3D &amp; documentary editing.
+          </p>
+          <div class="svc-glow-line"></div>
+        </div>
+
+        <div class="service-card reveal-up delay-2">
+          <div class="svc-icon">💻</div>
+          <h3 class="svc-title">Web App Development</h3>
+          <p class="svc-desc">
+            Building responsive and visually premium web applications with
+            modern UI/UX, smooth interactions, scalable systems, and
+            high-performance development.
+          </p>
+          <div class="svc-glow-line"></div>
+        </div>
+
+        <div class="service-card reveal-up delay-3">
+          <div class="svc-icon">📲</div>
+          <h3 class="svc-title">App Development</h3>
+          <p class="svc-desc">
+            Designing and developing modern mobile applications with smooth
+            navigation, optimised performance, clean interfaces, and scalable
+            functionality.
+          </p>
+          <div class="svc-glow-line"></div>
+        </div>
+
+        <div class="service-card reveal-up delay-4">
+          <div class="svc-icon">📈</div>
+          <h3 class="svc-title">Strategy &amp; Planning</h3>
+          <p class="svc-desc">
+            Developing creative digital strategies, branding systems,
+            audience-focused campaigns, and growth plans that help businesses
+            scale with clarity and consistency.
+          </p>
+          <div class="svc-glow-line"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────── CONTACT SECTION ──────────── -->
+  <section class="contact" id="contact">
+    <div class="orb orb-contact-1"></div>
+    <div class="orb orb-contact-2"></div>
+    <div class="section-inner">
+      <div class="section-badge reveal-up">GET IN TOUCH</div>
+      <h2 class="section-title reveal-up">
+        Let's work <span class="gradient-text">together</span>
+      </h2>
+
+      <div class="contact-grid">
+        <!-- LEFT INFO -->
+        <div class="contact-info reveal-up delay-1">
+          <p class="contact-intro">
+            We're currently open for freelancing opportunities, creative
+            collaborations, branding projects, website/app development, social
+            media management, and long-term partnerships. Let's build something
+            amazing together.
+          </p>
+
+          <div class="info-cards">
+            <div class="info-card">
+              <span class="info-icon">📧</span>
+              <div>
+                <p class="info-label">EMAIL</p>
+                <a href="mailto:Vaayu92447@gmail.com" class="info-val">Vaayu92447@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">📞</span>
+              <div>
+                <p class="info-label">PHONE / WHATSAPP</p>
+                <a href="tel:+919244768934" class="info-val">+91 9244768934</a>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">📍</span>
+              <div>
+                <p class="info-label">LOCATION</p>
+                <p class="info-val">Bilaspur, Chhattisgarh • Remote Available</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <span class="info-icon">⏰</span>
+              <div>
+                <p class="info-label">AVAILABILITY</p>
+                <p class="info-val">Open for freelance &amp; remote projects worldwide</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="contact-form-wrap glass-card reveal-up delay-2">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="projectType">Project Type</label>
+              <select id="projectType" name="projectType" required>
+                <option value="" disabled selected>Select a service…</option>
+                <option>Social Media Management</option>
+                <option>Graphic Design</option>
+                <option>Thumbnail Design</option>
+                <option>Video Editing</option>
+                <option>Web App Development</option>
+                <option>App Development</option>
+                <option>Strategy &amp; Planning</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Budget Range</label>
+              <select id="budget" name="budget" required>
+                <option value="" disabled selected>Select budget…</option>
+                <option>Basic Project</option>
+                <option>Standard Project</option>
+                <option>Premium Project</option>
+                <option>Custom Budget</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project, goals, or ideas…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              Send Message 🚀
+            </button>
+
+            <p class="form-success" id="formSuccess">✅ Message sent! We'll be in touch soon.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ──────────── FOOTER ──────────── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="nav-logo">Vaayu<span>.</span></span>
+      <p class="footer-copy">© 2026 Vaayu Designer • All rights reserved</p>
+      <p class="footer-tagline">Crafted with creativity &amp; passion ✨</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
